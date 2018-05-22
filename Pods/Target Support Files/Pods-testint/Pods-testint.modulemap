@@ -1,0 +1,6 @@
+framework module Pods_testint {
+  umbrella header "Pods-testint-umbrella.h"
+
+  export *
+  module * { export * }
+}
