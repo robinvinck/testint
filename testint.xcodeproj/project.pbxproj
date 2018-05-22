@@ -16,6 +16,7 @@
 		031B409420B1C9F90003DDB8 /* testintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B409320B1C9F90003DDB8 /* testintTests.swift */; };
 		031B409F20B1C9F90003DDB8 /* testintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B409E20B1C9F90003DDB8 /* testintUITests.swift */; };
 		031B40BB20B1D0A40003DDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 031B40BA20B1D0A40003DDB8 /* GoogleService-Info.plist */; };
+		0333F63D20B415D000C84E8B /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333F63C20B415D000C84E8B /* UITextFieldExtension.swift */; };
 		5B4D5FBBEFE42DCDAB5424E4 /* Pods_testint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DF418568F26F7536BBD978 /* Pods_testint.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		031B409E20B1C9F90003DDB8 /* testintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testintUITests.swift; sourceTree = "<group>"; };
 		031B40A020B1C9F90003DDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		031B40BA20B1D0A40003DDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0333F63C20B415D000C84E8B /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		1930313435FB1163F61A1F6A /* Pods_testintTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testintTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CCD8F3940F4BA04632944BD /* Pods-testint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testint.release.xcconfig"; path = "Pods/Target Support Files/Pods-testint/Pods-testint.release.xcconfig"; sourceTree = "<group>"; };
 		39DFBB55D0022EC51A9B9E8D /* Pods_testintUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testintUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 		031B407A20B1C9F70003DDB8 /* testint */ = {
 			isa = PBXGroup;
 			children = (
+				0333F63B20B4159200C84E8B /* Extension */,
 				031B40BA20B1D0A40003DDB8 /* GoogleService-Info.plist */,
 				031B407B20B1C9F70003DDB8 /* AppDelegate.swift */,
 				031B407D20B1C9F70003DDB8 /* ViewController.swift */,
@@ -138,6 +141,14 @@
 				031B40A020B1C9F90003DDB8 /* Info.plist */,
 			);
 			path = testintUITests;
+			sourceTree = "<group>";
+		};
+		0333F63B20B4159200C84E8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0333F63C20B415D000C84E8B /* UITextFieldExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		5959144118E63B9F422DB317 /* Frameworks */ = {
@@ -337,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				031B407E20B1C9F70003DDB8 /* ViewController.swift in Sources */,
+				0333F63D20B415D000C84E8B /* UITextFieldExtension.swift in Sources */,
 				031B408420B1C9F80003DDB8 /* testint.xcdatamodeld in Sources */,
 				031B407C20B1C9F70003DDB8 /* AppDelegate.swift in Sources */,
 			);
