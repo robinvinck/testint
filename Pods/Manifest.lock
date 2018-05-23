@@ -36,17 +36,36 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GTMSessionFetcher/Core (1.1.15)
   - leveldb-library (1.20)
+  - Mapbox-iOS-SDK (4.0.1)
+  - MapboxCoreNavigation (0.17.0):
+    - MapboxDirections.swift (~> 0.20.0)
+    - MapboxMobileEvents (~> 0.4)
+    - Turf (~> 0.1)
+  - MapboxDirections.swift (0.20.0):
+    - Polyline (~> 4.2)
+  - MapboxMobileEvents (0.4.0)
+  - MapboxNavigation (0.17.0):
+    - Mapbox-iOS-SDK (~> 4.0)
+    - MapboxCoreNavigation (= 0.17.0)
+    - MapboxSpeech (~> 0.0.1)
+    - Solar (~> 2.1)
+  - MapboxSpeech (0.0.1)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - Polyline (4.2.0)
+  - Solar (2.1.0)
+  - Turf (0.1.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - Mapbox-iOS-SDK (~> 4.0)
+  - MapboxNavigation (~> 0.17)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -60,7 +79,16 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - leveldb-library
+    - Mapbox-iOS-SDK
+    - MapboxCoreNavigation
+    - MapboxDirections.swift
+    - MapboxMobileEvents
+    - MapboxNavigation
+    - MapboxSpeech
     - nanopb
+    - Polyline
+    - Solar
+    - Turf
 
 SPEC CHECKSUMS:
   Firebase: d6861c2059d8c32d1e6dd8932e22ada346d90a3a
@@ -73,8 +101,17 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  Mapbox-iOS-SDK: 09b978be732d753e5c5e2911460fc0a018ce9be6
+  MapboxCoreNavigation: 729666a164ceacb789b63047406a5c95ca965bbd
+  MapboxDirections.swift: 9a46ca0f0608c76393f392ae793459cc30aa846f
+  MapboxMobileEvents: e71cf788a95fa0c01ad6ce17fd5efd13140af5ff
+  MapboxNavigation: afe18c9de475aefc1387100daa3a46cc8f95a5de
+  MapboxSpeech: 6cc9b3d53adc2988af3ebc704dd17907b84a3f9f
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Polyline: 3d69f75bb136357e27291d439d0436c6ebda57a4
+  Solar: 2dc6e7cc39186cb0c8228fa08df76fb50c7d8f24
+  Turf: 4ace207379c8d58a8e45842755de821dac3fae72
 
-PODFILE CHECKSUM: 2fefc2cfd5b584d74f65cf26761f32a5498260c2
+PODFILE CHECKSUM: 9aa85d22f977609417577714e1399cdd4c5f92aa
 
 COCOAPODS: 1.5.2
