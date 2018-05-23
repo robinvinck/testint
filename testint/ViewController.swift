@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     
     @IBOutlet weak var signinbtn: UIButton!
-    
 
     @IBAction func signin(_ sender: Any) {
         Auth.auth().signIn(withEmail: self.name.text!, password: self.email.text!) { (user, error) in
