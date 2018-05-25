@@ -31,41 +31,29 @@ PODS:
   - FirebaseStorage (3.0.0):
     - FirebaseCore (~> 5.0)
     - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseUI/Storage (5.0.0):
+    - Firebase/Storage (~> 5.0)
+    - SDWebImage (~> 4.0)
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GTMSessionFetcher/Core (1.1.15)
   - leveldb-library (1.20)
-  - Mapbox-iOS-SDK (4.0.1)
-  - MapboxCoreNavigation (0.17.0):
-    - MapboxDirections.swift (~> 0.20.0)
-    - MapboxMobileEvents (~> 0.4)
-    - Turf (~> 0.1)
-  - MapboxDirections.swift (0.20.0):
-    - Polyline (~> 4.2)
-  - MapboxMobileEvents (0.4.0)
-  - MapboxNavigation (0.17.0):
-    - Mapbox-iOS-SDK (~> 4.0)
-    - MapboxCoreNavigation (= 0.17.0)
-    - MapboxSpeech (~> 0.0.1)
-    - Solar (~> 2.1)
-  - MapboxSpeech (0.0.1)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - Polyline (4.2.0)
-  - Solar (2.1.0)
-  - Turf (0.1.1)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
-  - Mapbox-iOS-SDK (~> 4.0)
-  - MapboxNavigation (~> 0.17)
+  - FirebaseUI/Storage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -76,19 +64,12 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
+    - FirebaseUI
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - leveldb-library
-    - Mapbox-iOS-SDK
-    - MapboxCoreNavigation
-    - MapboxDirections.swift
-    - MapboxMobileEvents
-    - MapboxNavigation
-    - MapboxSpeech
     - nanopb
-    - Polyline
-    - Solar
-    - Turf
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Firebase: d6861c2059d8c32d1e6dd8932e22ada346d90a3a
@@ -98,20 +79,13 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 697eb53e5b4fe7cd4fa8756c1f82a9fca011345f
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
   FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
+  FirebaseUI: 0e9ab15e00073e421890c755b6f2bd757605601f
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
-  Mapbox-iOS-SDK: 09b978be732d753e5c5e2911460fc0a018ce9be6
-  MapboxCoreNavigation: 729666a164ceacb789b63047406a5c95ca965bbd
-  MapboxDirections.swift: 9a46ca0f0608c76393f392ae793459cc30aa846f
-  MapboxMobileEvents: e71cf788a95fa0c01ad6ce17fd5efd13140af5ff
-  MapboxNavigation: afe18c9de475aefc1387100daa3a46cc8f95a5de
-  MapboxSpeech: 6cc9b3d53adc2988af3ebc704dd17907b84a3f9f
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  Polyline: 3d69f75bb136357e27291d439d0436c6ebda57a4
-  Solar: 2dc6e7cc39186cb0c8228fa08df76fb50c7d8f24
-  Turf: 4ace207379c8d58a8e45842755de821dac3fae72
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: 9aa85d22f977609417577714e1399cdd4c5f92aa
+PODFILE CHECKSUM: 0d223b9702e8c2d3bdb3ff359034d2f9341ad6c2
 
 COCOAPODS: 1.5.2

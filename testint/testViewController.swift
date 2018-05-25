@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import FirebaseUI
+import FirebaseStorage
+import FirebaseDatabase
 import UserNotifications
 
 //import Mapbox
@@ -17,34 +20,37 @@ import UserNotifications
 
 
 class testViewController: UIViewController {
-    @IBAction func test(_ sender: Any) {
-        
-        let content = UNMutableNotificationContent()
-        content.title = "How many days are there in one year"
-        content.subtitle = "Do you know?"
-        content.body = "Do you really know?"
-        content.badge = 1
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
-        
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-    }
+//    @IBAction func test(_ sender: Any) {
+//
+//        let content = UNMutableNotificationContent()
+    //        content.title = "How many days are there in one year"
+//        content.subtitle = "Do you know?"
+//        content.body = "Do you really know?"
+//        content.badge = 1
+//
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+//
+//        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+//    }
     
-    var ref: DatabaseReference!
+    //var ref: DatabaseReference!
    // let directions = Directions.shared
+  
+    
+    // Create a storage reference from our storage service
     
     
+    @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-              ref = Database.database().reference()
+        testImage()
+             // ref = Database.database().reference()
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
         })
-        
-        
+        // Get a reference to the storage service using the default Firebase App
         
         
   
@@ -138,6 +144,34 @@ class testViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func testImage(){
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
+        // Reference to an image file in Firebase Storage
+        //print(storageRef.bucket)
+        let reference = storageRef.child("images/0C7A4138.jpg")
+        // Create a reference to the file you want to download
+        
+        let imageView: UIImageView = self.imageView
+        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+        print(reference)
+        reference.getData(maxSize: 1 * 3072 * 3072) { data, error in
+            if let error = error {
+                // Uh-oh, an error occurred!
+                print(error)
+                print("doesnt work")
+            } else {
+                // Data for "images/island.jpg" is returned
+                let image = UIImage(data: data!)
+                imageView.image = image
+            }
+        }
+        
+        
+        print(reference)
+        
     }
     
     

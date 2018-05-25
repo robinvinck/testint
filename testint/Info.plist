@@ -45,5 +45,17 @@
 	<string>pk.eyJ1Ijoicm9iaW52NzY3NiIsImEiOiJjamhpdGR4YWkwMHdrMnpxa2h0cjI5OGJjIn0.ur4JQe-2x-KsGvyW4_cT4g</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Wij gebruiken uw locatie om uw vooruitgang te tracken.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>test</string>
+	<key>NSLocationUsageDescription</key>
+	<string>test</string>
+	<key>NSCameraUsageDescription</key>
+	<string>test</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>tet</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>test</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>test</string>
 </dict>
 </plist>

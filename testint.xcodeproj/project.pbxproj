@@ -18,6 +18,11 @@
 		031B40BB20B1D0A40003DDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 031B40BA20B1D0A40003DDB8 /* GoogleService-Info.plist */; };
 		0333F63D20B415D000C84E8B /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333F63C20B415D000C84E8B /* UITextFieldExtension.swift */; };
 		0333F63F20B4940000C84E8B /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333F63E20B4940000C84E8B /* testViewController.swift */; };
+		0333F64120B5985200C84E8B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333F64020B5985200C84E8B /* CameraViewController.swift */; };
+		03D8925720B6B1EF007860A0 /* Camera2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8925620B6B1EF007860A0 /* Camera2ViewController.swift */; };
+		03D8925D20B6FC97007860A0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8925C20B6FC97007860A0 /* CollectionViewCell.swift */; };
+		03D8925F20B6FDD8007860A0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8925E20B6FDD8007860A0 /* CollectionViewController.swift */; };
+		03D8926120B6FFF2007860A0 /* verstuurNaarDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8926020B6FFF2007860A0 /* verstuurNaarDBViewController.swift */; };
 		5B4D5FBBEFE42DCDAB5424E4 /* Pods_testint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DF418568F26F7536BBD978 /* Pods_testint.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,11 @@
 		031B40BA20B1D0A40003DDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0333F63C20B415D000C84E8B /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		0333F63E20B4940000C84E8B /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		0333F64020B5985200C84E8B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		03D8925620B6B1EF007860A0 /* Camera2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera2ViewController.swift; sourceTree = "<group>"; };
+		03D8925C20B6FC97007860A0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		03D8925E20B6FDD8007860A0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		03D8926020B6FFF2007860A0 /* verstuurNaarDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verstuurNaarDBViewController.swift; sourceTree = "<group>"; };
 		1930313435FB1163F61A1F6A /* Pods_testintTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testintTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CCD8F3940F4BA04632944BD /* Pods-testint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testint.release.xcconfig"; path = "Pods/Target Support Files/Pods-testint/Pods-testint.release.xcconfig"; sourceTree = "<group>"; };
 		39DFBB55D0022EC51A9B9E8D /* Pods_testintUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testintUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +124,7 @@
 		031B407A20B1C9F70003DDB8 /* testint */ = {
 			isa = PBXGroup;
 			children = (
+				03D8926220B70002007860A0 /* camera */,
 				0333F63B20B4159200C84E8B /* Extension */,
 				031B40BA20B1D0A40003DDB8 /* GoogleService-Info.plist */,
 				031B407B20B1C9F70003DDB8 /* AppDelegate.swift */,
@@ -124,6 +135,9 @@
 				031B408A20B1C9F80003DDB8 /* Info.plist */,
 				031B408220B1C9F80003DDB8 /* testint.xcdatamodeld */,
 				0333F63E20B4940000C84E8B /* testViewController.swift */,
+				0333F64020B5985200C84E8B /* CameraViewController.swift */,
+				03D8925C20B6FC97007860A0 /* CollectionViewCell.swift */,
+				03D8925E20B6FDD8007860A0 /* CollectionViewController.swift */,
 			);
 			path = testint;
 			sourceTree = "<group>";
@@ -152,6 +166,15 @@
 				0333F63C20B415D000C84E8B /* UITextFieldExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		03D8926220B70002007860A0 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				03D8925620B6B1EF007860A0 /* Camera2ViewController.swift */,
+				03D8926020B6FFF2007860A0 /* verstuurNaarDBViewController.swift */,
+			);
+			path = camera;
 			sourceTree = "<group>";
 		};
 		5959144118E63B9F422DB317 /* Frameworks */ = {
@@ -330,16 +353,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-testint/Pods-testint-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/MapboxCoreNavigation/MapboxCoreNavigation.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxDirections.swift/MapboxDirections.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxNavigation/MapboxNavigation.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxSpeech/MapboxSpeech.framework",
-				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
-				"${BUILT_PRODUCTS_DIR}/Solar/Solar.framework",
-				"${BUILT_PRODUCTS_DIR}/Turf/Turf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -347,16 +361,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxCoreNavigation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxDirections.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxSpeech.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Solar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Turf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -372,11 +377,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D8925F20B6FDD8007860A0 /* CollectionViewController.swift in Sources */,
 				031B407E20B1C9F70003DDB8 /* ViewController.swift in Sources */,
 				0333F63D20B415D000C84E8B /* UITextFieldExtension.swift in Sources */,
+				03D8925D20B6FC97007860A0 /* CollectionViewCell.swift in Sources */,
 				031B408420B1C9F80003DDB8 /* testint.xcdatamodeld in Sources */,
 				0333F63F20B4940000C84E8B /* testViewController.swift in Sources */,
+				03D8925720B6B1EF007860A0 /* Camera2ViewController.swift in Sources */,
 				031B407C20B1C9F70003DDB8 /* AppDelegate.swift in Sources */,
+				03D8926120B6FFF2007860A0 /* verstuurNaarDBViewController.swift in Sources */,
+				0333F64120B5985200C84E8B /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
